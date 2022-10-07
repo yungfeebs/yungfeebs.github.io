@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+  }
+
+  form {
+    padding: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  form label{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  input {
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  #chatbox {
+    text-align: left;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: white;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #6a6666;
+    overflow: auto;
+    border-radius: 5px;
+    border-bottom: 5px solid #6a6666;
+  }
+
+  #userinput {
+    flex: auto;
+    border-radius: 5px;
+    border: 1px solid #00bbff;
+  }
+
+  #send {
+    background: #00bbff;
+    border: 4px solid #0037ff;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
