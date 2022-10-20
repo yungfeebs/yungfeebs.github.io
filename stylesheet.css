@@ -25,6 +25,10 @@
     font-family: 'Times New Roman', Times, serif
   }
 
+  #wrapper{
+    width: 814px;
+    margin: 0 auto
+  }
   #chatbox {
     text-align: left;
     margin: auto;
