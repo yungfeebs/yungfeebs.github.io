@@ -1,59 +1,67 @@
 * {
-    margin:0;
-    padding:0;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    margin:auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-  }
+html {
+	height: 100%;
 
-  form {
-    padding: auto;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
+}
 
-  form label{
-    font-size: 2rem;
-    font-weight: bold;
-  }
+body {
+  margin:auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  background-color: maroon;
+}
 
-  input {
-    font-family: 'Times New Roman', Times, serif
-  }
+span {
+	padding-right: 15px;
+	padding-left: 15px;
+}
 
-  #wrapper{
-    width: 814px;
-    margin: 0 auto;
-  }
-  #chatbox {
-    text-align: left;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    background: white;
-    height: 500px;
-    width: 500px;
-    border: 1px solid #6a6666;
-    overflow: auto;
-    border-radius: 5px;
-    border-bottom: 5px solid #6a6666;
-  }
+.container {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
 
-  #userinput {
-    flex: auto;
-    border-radius: 5px;
-    border: 1px solid #00bbff;
-  }
+.chatbox {
+	height: 500px;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+} 
 
-  #send {
-    background: #00bbff;
-    border: 4px solid #0037ff;
-    color: white;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
+#bot {
+	margin-left: auto;
+}
+ 
+input { 
+	border: 0; 
+	padding: 15px; 
+	margin-left: auto;
+	border-radius: 10px; 
+}
+
+.message {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.response {
+	display: flex;
+	align-items: center;
+	margin: 1%;
+}
+
