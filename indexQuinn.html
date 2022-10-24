@@ -6,15 +6,16 @@
         <title>Augsburg Chatbot</title>
         <meta name="description" content="Augsburg Chatbot" />
         <link rel="stylesheet" href="stylesheet.css" />
+        <script type="text/javascript" src="index.js"></script>
     </head>
     <body>
-        <div id="wrapper">
-            <p class="hello">Hello!</p> 
+        <div id="container" class = "container">
+            <div id="chatbox" class = "chatbox">
+                <div id="message" class="message"></div>
+                <input id="userInput" type="text" placeholder="Type here!" autocomplete="off" autofocus="true" />
+            </div>
         </div>
-        <div id="chatbox"></div>
-        <form name="message" action="">
-            <input name="userinput" type="text" id="usermessage">
-            <input name="send" type="submit" id="send" value="Send">
-        </form>
     </body>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="botDatabase.js"></script>
 </html>
