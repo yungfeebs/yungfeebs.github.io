@@ -24,7 +24,7 @@ function output(input){
       returnStatement = evaluate(questions, answers, text);
     } else {
         //this is being called even when the if value is true, so I still need to debug this
-        returnStatement = ""
+        returnStatement = tryAgain[0]
     }
     //add the user input and returnStatement to the chat box displaying the log
     displayChat(input, returnStatement);
