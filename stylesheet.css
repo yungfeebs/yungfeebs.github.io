@@ -4,16 +4,54 @@
 
 html {
 	height: 100%;
-
 }
 
 body {
   margin:auto;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: normal;
-  background-color: maroon;
+  background: url("https://wallpaperaccess.com/full/2184693.jpg");
 }
 
+.welcome-content{
+	margin-top: 350px;
+}
+
+.welcome-message {
+	color: white;
+	text-align: center;
+	word-spacing: 10px;
+	letter-spacing: 0.6em;
+	font-family: 'Trebuchet MS', Times, sans-serif;
+	font-size: medium;
+}
+
+.chatbot-link {
+	color: white;
+	text-align: center;
+	font-family: 'Trebuchet MS', Times, sans-serif;
+	font-size: medium;
+}
+
+a:visited{  
+	color: white;  
+}  
+a:hover{  
+	color: black;  
+}  
+a:active{  
+	color: white;  
+}  
+p{  
+	font-size: 20px;  
+}  	
+a:link, a:visited {
+	color: white;
+	border: 2px solid white;
+	padding: 10px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+	
 span {
 	padding-right: 15px;
 	padding-left: 15px;
