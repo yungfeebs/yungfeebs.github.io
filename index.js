@@ -39,7 +39,7 @@ function evaluate(questions, answers, parsedText){
     for(let i = 0; i < questions.length; i++){
         for(let j = 0; j < questions[i].length; j++){
             //when the answer is in the database
-            if(questions[i][j] === parsedText) {
+            if(parsedText.includes(questions[i][j])) {
                 //set answer to the corresponding answer and answerFound to true
                 answer = answers[i];
                 answerFound = true;
@@ -59,16 +59,17 @@ function displayChat(input, returnStatement) {
     const chatboxContainer = document.getElementById("message");
     let userDiv = document.createElement("div");
     userDiv.id = "user";
-    userDiv.className = "userRespone";
+    userDiv.className = "userResponse";
     userDiv.innerHTML = `<span>${input}</span>`;
     chatboxContainer.appendChild(userDiv);
 
     //Create chat from our bot
+    const chatboxContainer2 = document.getElementById("message");
     let botDiv = document.createElement("div");
     let botText = document.createElement("span");
     botDiv.id = "bot";
     botDiv.className = "botResponse";
-    botText.innerText = `${returnStatement}`;
+    botText.innerHTML = `${returnStatement}`;
     botDiv.appendChild(botText);
     chatboxContainer.appendChild(botDiv);
     // keep it so we auto scroll with each input
