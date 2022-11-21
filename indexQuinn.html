@@ -10,8 +10,8 @@
     <body>
         <div id="container" class = "container">
             <div id="chatbox" class = "chatbox">
-                <div id="message" class="message"></div>
-                <input id="userInput" type="text" placeholder="Type here!" autocomplete="off" autofocus="true" />
+                <p id="message" class="message"></p>
+                    <input id="userBox" type="text" placeholder="Type here!" autocomplete="off" autofocus="true" onkeydown="if (event.keyCode == 13) {talk()}">
             </div>
         </div>
     </body>
