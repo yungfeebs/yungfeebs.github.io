@@ -1,9 +1,9 @@
 //index.js
 
 know = {
-    "hello" : "hi",
     "Student" : "Are you currently enrolled at Augsburg? Type 'Enrolled' or 'Not enrolled' ",
-    "Enrolled" : "Are you currently enrolled at Augsburg?",
+    "Not Student" : "What would you like to learn about? Type 'Atheltics' or 'Employment' ",
+    "Enrolled" : "What can I help you find? ",
     "Not Enrolled" : "Here's the link to admissions: https://www.augsburg.edu/admissions/",
     "how are you?" : "good",
     "ok" : ":)"
