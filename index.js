@@ -39,6 +39,7 @@ function evaluate(questions, answers, parsedText){
     for(let i = 0; i < questions.length; i++){
         for(let j = 0; j < questions[i].length; j++){
             //when the answer is in the database
+            //now any input including the question is accepted
             if(parsedText.includes(questions[i][j])) {
                 //set answer to the corresponding answer and answerFound to true
                 answer = answers[i];
