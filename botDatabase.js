@@ -10,6 +10,7 @@ const questions = [
     //less specific
     ["organization"],
     ["admission"],
+    ["aspiring"],
     ["current"],
     ["record"],
     ["registration"],
@@ -22,6 +23,7 @@ const questions = [
     ["life"],
     ["careers"],
     ["student"],
+    ["other"],
     ["help"]
 ]
 
@@ -38,6 +40,7 @@ const answers = [
     //
     ["You can find more information about student organizations at this link: <a href='https://www.augsburg.edu/campuslife/campus-involvement/groups/'> Student Orgs </a>"], 
     ["You can find more inforation about admissions at this link: <a href='https://www.augsburg.edu/admissions/'> Admissions </a>"],
+    ["You can find more inforation about admissions at this link: <a href='https://www.augsburg.edu/admissions/'> Admissions </a>"],
     ["You are a current student? Can I help you access Residence Life, Student Organizations, Moodle, or Other?"],
     ["You can find more information about records and registration at this link: <a href='https://terra.augsburg.edu/recreg/Pages/frmCourseSearch.aspx'> Records and Registration </a>"],
     ["You can find more information about records and registration at this link: <a href='https://terra.augsburg.edu/recreg/Pages/frmCourseSearch.aspx'> Records and Registration </a>"],
@@ -49,7 +52,8 @@ const answers = [
     ["YOu can learn about Auggie Life here: <a href='https://augsburg.campuslabs.com/engage/'> Auggie Life </a>"],
     ["Are you interested in learning more about student careers? Or jobs at Augsburg?"],
     ["Are you a current student at Augsburg, or an aspiring student looking for admissions?"],
-    ["Can I direct you to one of the following? Just type Athletics, Admissions, Moodle, Residence Life, Careers, Alumni or others."]
+    ["You may be looking for one of the following... Just type Registration, Email, Student Life, Careers, Strommen Center."],
+    ["Can I direct you to one of the following? Just type Athletics, Student Organizations, Moodle, Residence Life, Careers, Alumni, or other."]
 ]
 const tryAgain = [
     ["I do not understand, try again or type help for some options"],
