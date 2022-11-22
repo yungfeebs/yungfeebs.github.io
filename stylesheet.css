@@ -32,19 +32,19 @@ body {
 }
 
 a:visited{  
-	color: white;  
+	color: blueviolet;  
 }  
 a:hover{  
 	color: black;  
 }  
 a:active{  
-	color: white;  
+	color: blue;  
 }  
 p{  
 	font-size: 20px;  
 }  	
 a:link, a:visited {
-	color: white;
+	color: red;
 	border: 2px solid white;
 	padding: 10px 50px;
 	text-align: center;
