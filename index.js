@@ -1,21 +1,79 @@
 //index.js
 
-know = {
-    "Student" : "Are you currently enrolled at Augsburg? Type 'Enrolled' or 'Not enrolled' ",
-    "Not Student" : "What would you like to learn about? Type 'Atheltics' or 'Employment' ",
-    "Enrolled" : "What can I help you find? ",
-    "Not Enrolled" : "Here's the link to admissions: https://www.augsburg.edu/admissions/",
-    "how are you?" : "good",
-    "ok" : ":)"
-};
+document.addEventListener("DOMContentLoaded", () => {
+    const userInput = document.getElementById("userInput")
+    //when the user presses Enter, trigger the output function.
+    userInput.addEventListener("keydown", (event) => {
+        if (event.code === "Enter") {
+            let input = userInput.value;
+            userInput.value = "";
+            output(input);
+        };
+    });
+});
 
-function talk() {
-    var user = document.getElementById("userBox").value;
-    document.getElementById("userBox").value = "";
-    document.getElementById("message").innerHTML += user+"<br>";
-    if (user in know) {
-        document.getElementById("message").innerHTML += know[user]+"<br>";
+function output(input){
+    //initialize returnStatement
+    let returnStatement;
+  
+    //convert input to lower case and remove special characters and white space
+    let text = input.toLowerCase().replace(/[^\w\s]/gi, "").replace(/[\d]/gi, "").trim();
+  
+    //check input against the database
+    if (evaluate(questions, answers, text)) { 
+      returnStatement = evaluate(questions, answers, text);
     } else {
-        document.getElementById("message").innerHTML += "I don't understand...<br>";
+        //this is being called even when the if value is true, so I still need to debug this
+        returnStatement = tryAgain[0]
     }
-} 
+    //add the user input and returnStatement to the chat box displaying the log
+    displayChat(input, returnStatement);
+}
+
+function evaluate(questions, answers, parsedText){
+    //initialize answer
+    let answer;
+    //since we haven't checked yet, answerFound starts as false
+    let answerFound = false;
+    //loop through questions
+    for(let i = 0; i < questions.length; i++){
+        for(let j = 0; j < questions[i].length; j++){
+            //when the answer is in the database
+            //now any input including the question is accepted
+            if(parsedText.includes(questions[i][j])) {
+                //set answer to the corresponding answer and answerFound to true
+                answer = answers[i];
+                answerFound = true;
+                break;
+            }
+        }
+        if (answerFound){
+            break;
+        }
+    }
+    //return answer
+    return answer;
+}
+
+function displayChat(input, returnStatement) {
+    //Create chat for our user
+    const chatboxContainer = document.getElementById("message");
+    let userDiv = document.createElement("div");
+    userDiv.id = "user";
+    userDiv.className = "userResponse";
+    userDiv.innerHTML = `<span>${input}</span>`;
+    chatboxContainer.appendChild(userDiv);
+
+    //Create chat from our bot
+    const chatboxContainer2 = document.getElementById("message");
+    let botDiv = document.createElement("div");
+    let botText = document.createElement("span");
+    botDiv.id = "bot";
+    botDiv.className = "botResponse";
+    botText.innerHTML = `${returnStatement}`;
+    botDiv.appendChild(botText);
+    chatboxContainer.appendChild(botDiv);
+    // keep it so we auto scroll with each input
+    chatboxContainer.scrollTop = chatboxContainer.scrollHeight - chatboxContainer.clientHeight;
+
+}
