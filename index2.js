@@ -8,8 +8,8 @@ know = {
 };
 
 function talk() {
-    var user = document.getElementById("userBox").value;
-    document.getElementById("userBox").value = "";
+    var user = document.getElementById("userInput").value;
+    document.getElementById("userInput").value = "";
     document.getElementById("message").innerHTML += user+"<br>";
     if (user in know) {
         document.getElementById("message").innerHTML += know[user]+"<br>";
