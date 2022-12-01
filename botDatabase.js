@@ -18,7 +18,6 @@ const questions = [
     ["email"],
     ["e-mail"],
     
-
     //not specific
     ["life"],
     ["careers"],
@@ -27,7 +26,6 @@ const questions = [
     ["help"]
 ]
 
-
 const answers = [
     //
     ["Students can find class information, grades, and more at this link: <a href='https://moodle.augsburg.edu/moodle2021/login/index.php'> Moodle </a>"],
@@ -35,7 +33,6 @@ const answers = [
     ["You can find more information about residence life at this link: <a href='https://www.augsburg.edu/residencelife/'> Residence Life </a>"],
     ["You can find more information about student career resources at the Strommen Center: <a href='https://www.augsburg.edu/strommen/'> Strommen Center </a>"],
     ["You can find more information about Augsburg alumni at this link: <a href='https://www.augsburg.edu/alumni/'> Alumni </a>"],
-
 
     //
     ["You can find more information about student organizations at this link: <a href='https://www.augsburg.edu/campuslife/campus-involvement/groups/'> Student Orgs </a>"], 
