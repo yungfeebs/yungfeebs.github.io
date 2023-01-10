@@ -3,11 +3,21 @@ body{
 }
 
 h1{
-    color: coral;
+    color: lightseagreen;
 }
 
 p{
    color: white;
+   font-size: 20px
+}
+
+div.a{
+  width: 400px;
+}
+
+img.a{
+  margin-top: -150px;
+  margin-left: 760px;
 }
 
 /*sidebar */
