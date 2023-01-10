@@ -6,6 +6,48 @@ h1{
     color: coral;
 }
 
+p{
+   color: white;
+}
+
+/*sidebar */
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: transparent;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: coral;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: rgb(126, 53, 26);
+  }
+
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+/*sidebar*/
+
+
+.glitter{
+  margin-bottom: 0px;
+  position: absolute;
+
+}
+
 a.bottom{
     position: absolute;
     bottom: 2%;
@@ -79,7 +121,9 @@ a.bottom{
 .button-92 {
   font-weight: bold;
   font-size: 2rem;
-  margin: 0;
+  margin-top: -90px;
+  margin-left: 600px;
+  position: absolute;
   cursor: pointer;
   padding: .1em .3em;
 }
