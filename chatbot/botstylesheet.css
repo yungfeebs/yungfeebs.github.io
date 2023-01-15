@@ -42,7 +42,14 @@ a:active{
 }  
 p{  
 	font-size: 20px;  
-}  	
+}
+
+p.attr{
+	color: antiquewhite;
+	position: absolute;
+	margin-left: 20px;
+	bottom: 10px;
+}
 a:link, a:visited {
 	color: red;
 	border: 2px solid white;
