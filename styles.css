@@ -1,9 +1,14 @@
 body{
     background-image: url("decor/stars.gif");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1{
     color: lightseagreen;
+}
+
+h2{
+  color: lightseagreen;
 }
 
 p{
@@ -15,11 +20,19 @@ div.a{
   width: 400px;
 }
 
-img.a{
+img.header{
   margin-top: -150px;
   margin-left: 760px;
 }
 
+p.header{
+  margin-top: -75px;
+  margin-left: 700px;
+}
+
+div.cheevo{
+  margin-top: 50px;
+}
 /*sidebar */
   .sidenav {
     width: 130px;
