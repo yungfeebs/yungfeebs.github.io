@@ -5,6 +5,7 @@ body{
 
 h1{
     color: lightseagreen;
+    margin-bottom: -10px;
 }
 
 h2{
@@ -17,17 +18,34 @@ h3{
 
 p{
    color: white;
-   font-size: 20px
+   font-size: 20px;
+   
 }
 
 div.a{
-  width: 400px;
+  width: 470px;
 }
 
 img.header{
   margin-top: -150px;
   margin-left: 760px;
 }
+
+
+img.gamepic{
+  position: relative;
+  width:120px;
+  float: left;
+  top:20px;
+}
+
+div.cheevo{
+  position:relative;
+  left:15px;
+  top: 15px;
+  width: 500px;
+}
+
 
 p.header{
   margin-top: -75px;
@@ -80,9 +98,15 @@ div.cheevo{
 
 
 .glitter{
-  margin-bottom: 0px;
+  bottom: 0px;
   position: absolute;
 
+}
+
+.wip{
+  bottom:10px;
+  right:10px;
+  position: absolute;
 }
 
 a.bottom{
