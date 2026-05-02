@@ -25,8 +25,28 @@ function createPostCard(post) {
   footer.className = 'post-footer';
   footer.textContent = post.date;
 
+  const content = document.createElement('div');
+  content.className = 'post-content';
+
+  if (post.image) {
+    const image = document.createElement('img');
+    image.className = 'post-image';
+    image.src = `post imgs/${post.image}`;
+    image.alt = post.title;
+    content.appendChild(image);
+  }
+
+  if (post.rating) {
+    const rating = document.createElement('p');
+    rating.className = 'post-rating';
+    rating.textContent = post.rating;
+    body.appendChild(rating);
+  }
+
+  content.appendChild(body);
+
   article.appendChild(header);
-  article.appendChild(body);
+  article.appendChild(content);
   article.appendChild(footer);
   return article;
 }

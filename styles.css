@@ -2,9 +2,10 @@ html {
   margin: 0;
   min-height: 100%;
   background-color: #000;
-  background-image: url("assets/twinkledots.gif");
+  background-image: url("assets/stars.gif");
   background-repeat: repeat;
-  background-position: center;
+  background-position: center 0px;
+  background-attachment: fixed;
   background-size: auto;
   color: #fff;
   font-family: monospace;
@@ -28,7 +29,8 @@ body {
 }
 
 .back {
-  position: relative;
+  position: fixed;
+  inset: 0;
   z-index: 1;
   padding: 2rem;
   pointer-events: none;
@@ -40,11 +42,24 @@ img {
   pointer-events: none;
   -webkit-user-drag: none;}
 
-.foreground {
+.constellation-layer {
   position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.constellation-image {
+  position: absolute;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.foreground {
+  position: relative;
   z-index: 3;
   pointer-events: auto;
   display: flex;
@@ -53,6 +68,7 @@ img {
   align-items: stretch;
   width: min(95vw, 720px);
   padding: 0.5rem 0;
+  margin: 1rem auto;
 }
 
 .post-card {
@@ -83,14 +99,46 @@ img {
   margin: 0;
 }
 
+.post-footer {
+  text-align: right;
+  margin-top: 1rem;
+}
+
 .post-body {
   color: #eee;
   line-height: 1.7;
   margin: 1rem 0 0;
 }
 
+.post-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.post-image {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.post-body {
+  flex: 1;
+  min-width: 220px;
+}
+
 .post-body p {
   margin: 0 0 1rem;
+}
+
+.post-rating {
+  margin: 0.75rem 0 0;
+  color: #ddd;
+  font-style: italic;
 }
 
 h1, p, a, li, span {
