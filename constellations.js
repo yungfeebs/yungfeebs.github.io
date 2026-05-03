@@ -6,6 +6,7 @@ const constellationFiles = [
   'honse.png',
   'stars.png',
   'twos.png',
+  'shootingstar.gif',
   'you.png'
 ];
 
