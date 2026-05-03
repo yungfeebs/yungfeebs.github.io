@@ -66,4 +66,22 @@ function renderPosts() {
   });
 }
 
-renderPosts();
+async function loadPosts() {
+  try {
+    const response = await fetch('posts.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const posts = await response.json();
+    window.blogPosts = Array.isArray(posts) ? posts : [];
+  } catch (error) {
+    console.error('Failed to load posts:', error);
+    window.blogPosts = [];
+  }
+}
+
+async function initPosts() {
+  await loadPosts();
+  renderPosts();
+}
+
+initPosts();
