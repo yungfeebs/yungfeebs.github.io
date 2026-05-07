@@ -7,12 +7,17 @@ const constellationFiles = [
   'stars.png',
   'twos.png',
   'shootingstar.gif',
-  'you.png'
+  'you.png',
+  'camelo.png',
+  'deuces.png',
+  'fox.png',
+  'meow.png',
+  'minusra.png'
 ];
 
 const constellationConfig = {
   imageDir: 'assets/constellations',
-  maxWidth: 1800,
+  maxWidth: 1000,
   visibleCount: 3
 };
 
