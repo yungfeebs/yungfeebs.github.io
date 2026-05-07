@@ -17,7 +17,7 @@ function createPostCard(post) {
   body.className = 'post-body';
   post.body.split('\n\n').forEach(paragraph => {
     const p = document.createElement('p');
-    p.textContent = paragraph;
+    p.innerHTML = paragraph.replace(/\n/g, '<br>');
     body.appendChild(p);
   });
 
