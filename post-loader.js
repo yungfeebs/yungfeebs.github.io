@@ -33,6 +33,18 @@ function createPostCard(post) {
     image.className = 'post-image';
     image.src = `post imgs/${post.image}`;
     image.alt = post.title;
+    
+    // Make image clickable to play audio if audioUrl exists
+    if (post.audioUrl) {
+      image.style.cursor = 'pointer';
+      image.style.pointerEvents = 'auto';
+      image.addEventListener('click', () => {
+        if (window.audioPlayer) {
+          window.audioPlayer.play(post.audioUrl, post.audioTitle || post.title);
+        }
+      });
+    }
+    
     content.appendChild(image);
   }
 

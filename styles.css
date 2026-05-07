@@ -39,7 +39,6 @@ body {
 }
 
 img {
-  pointer-events: none;
   -webkit-user-drag: none;}
 
 .constellation-layer {
@@ -124,6 +123,12 @@ img {
   border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.post-image[style*="cursor: pointer"]:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
 }
 
 .post-body {
@@ -145,4 +150,126 @@ h1, p, a, li, span {
   color: #fff;
   background: transparent;
   user-select: none;
+}
+
+/* Audio Player Widget */
+.audio-player-widget {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  width: 280px;
+  display: none;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.audio-player-widget.visible {
+  display: block;
+}
+
+.audio-player-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.audio-close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.audio-close-btn:hover {
+  opacity: 1;
+}
+
+.audio-track-name {
+  font-size: 0.9rem;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  padding-right: 1.75rem;
+}
+
+.audio-track-name {
+  font-size: 0.9rem;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.audio-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.audio-play-btn,
+.audio-pause-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.audio-play-btn:hover,
+.audio-pause-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.audio-play-btn:active,
+.audio-pause-btn:active {
+  transform: scale(0.95);
+}
+
+.audio-progress-container {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.audio-progress-bar {
+  --progress: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.7));
+  transform: scaleX(var(--progress));
+  transform-origin: left;
+  border-radius: 2px;
+}
+
+.audio-time-info {
+  font-size: 0.75rem;
+  color: #999;
+  text-align: center;
+}
+
+.audio-time-display {
+  font-weight: 500;
 }

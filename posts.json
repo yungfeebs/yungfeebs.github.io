@@ -1,16 +1,28 @@
 [
   {
+    "title": "site features",
+    "date": "May 7, 2026",
+    "body": "It seems that adding features to the site has captured my imagination a bit more than writing creatively. That's fine, we'll get there soon. For now, check out these cool things you can do. <b>Click any album art</b> to play a song! <b>Click the background</b> to fireworks! <b> See unique constellations </b> in the night sky on every visit! ok bye :)",
+    "image": "katylied.jpg",
+    "audioUrl": "assets/mp3s/Bad Sneakers.mp3",
+    "audioTitle": "Steely Dan - Bad Sneakers",
+    "tags": "music, other",
+    "rating": "★★★★★"
+  },
+  {
     "title": "this place",
     "date": "May 7, 2026",
     "body": "For as long as I can remember, I've made a habit of walking into a store and filling an imaginary cart with a few things I'd like to buy, genuinely considering a purchase, and strolling out empty handed. Often it will take me 2, 3, maybe even more trips to commit to buying something I don't need. Nowhere is this more apparent than the record store, where I can never seem to justify the haul that piles up in my head as I pace the isles, thumbing through records for the occasional dopamine release: \"Ooh, I love this one!\". Recently I found myself in the same routine. Yet while holding <i>TOTEP</i>, and over the following days another thought arose that would become the seed of this space. \n\nIndecision, commitment, and perfectionism are all themes that may rear their heads here but they also represent the foundation on which this exercise was built. What if I forced myself to write down my passing thoughts and throw them at the wall? What if I forced myself to trust the instinct, to protect myself from the overthinking and analysis of my opinion that paralyzes me? So here we are, on ryanfeb.us, the blog/wall/review space that proposes a solution. I buy records. I write about that. I experience life. I write about that. Other things happen. I write about that. It's open-ended, low commitment fun for the whole family. Actually just for me and you.\n\nI imagine if I do commit to writing regularly here that this glossy buttoned-up style will devolve into something resembling how I actually speak with people. Retaining some weight in the thoughts I'm expressing while being true to my current 'guy who is never offline' voice may be the initial balancing act. I've thought about the tenor of the content I'll share here as well; I've considered how truly unfiltered I want to be. The levies against my fear of over-exposing my thoughts here are twofold. One, I'd like to drown this page in unfiltered and unedited writing and will be creating mostly chaff until I can write wheat. (Is that how wheat works? Like, when you're bad at growing wheat is there more chaff?) Anyway, the other levy is the nature of hosting a blog on my personal website with a bunch of my opinions on it. I'm wholly unremarkable when viewed from thirty-thousand feet, and my webpage should be no different. If you're reading this, thank you. You're staring at the anthill, observing one ant's every move.\n\nI'm imposing no structure on this page but I am stating some goals up top. A weekly post or addition to the site. Become more comfortable with expressing myself imperfectly. Buy some records. And exhale one percent deeper from offloading some of the thoughts I carry onto this page. In the short term, begin to roll the snowball downhill and mask the imperfections with growth and speed.",
     "tags": "personal, other",
-    "rating": "★★★★★ - ryan"
+    "rating": "-ryan ★★★★★"
   },
   {
     "title": "feep",
     "date": "April 29, 2026",
     "body": "click to boom",
     "image": "totep.jpg",
+    "audioUrl": "assets/mp3s/Cinema.mp3",
+    "audioTitle": "Kero Kero Bonito - Cinema",
     "tags": "music, other",
     "rating": "★★★★★"
   }
