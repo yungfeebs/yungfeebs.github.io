@@ -28,6 +28,25 @@ body {
   display: block;
 }
 
+.top-nav {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 101;
+  pointer-events: auto;
+}
+
+.top-nav .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.top-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
 .back {
   position: fixed;
   inset: 0;

@@ -118,6 +118,8 @@ function renderPosts() {
 
   // Filter by post_id if provided
   if (postId !== null) {
+    const homeLink = document.querySelector('#home-link');
+    homeLink.style.display = 'inline'; // Show home link when viewing a specific post
     const filtered = window.blogPosts.filter(post => post.id == postId);
     if (filtered.length === 0) {
       container.textContent = 'Post not found.';
