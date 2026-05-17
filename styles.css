@@ -103,6 +103,34 @@ img {
   margin-top: 1rem;
 }
 
+.post-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.share-button {
+  color: #ccc;
+  font-size: 0.65rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: 1rem;
+  white-space: nowrap;
+  padding: 0;
+  font-family: monospace;
+}
+
+.share-button:hover:not(:disabled) {
+  color: #fff;
+}
+
+.share-button:disabled {
+  cursor: default;
+}
+
 .post-body {
   color: #eee;
   line-height: 1.7;

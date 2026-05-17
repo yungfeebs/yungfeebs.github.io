@@ -23,7 +23,42 @@ function createPostCard(post) {
 
   const footer = document.createElement('footer');
   footer.className = 'post-footer';
-  footer.textContent = post.date;
+  
+  // Create footer content with date and share button
+  const footerContent = document.createElement('div');
+  footerContent.className = 'post-footer-content';
+  
+  const dateSpan = document.createElement('span');
+  dateSpan.textContent = post.date;
+  footerContent.appendChild(dateSpan);
+  
+  // Add share button
+  const shareButton = document.createElement('button');
+  shareButton.className = 'share-button';
+  shareButton.textContent = '🔗';
+  shareButton.type = 'button';
+  shareButton.addEventListener('click', () => {
+    const url = `${window.location.origin}${window.location.pathname}?post_id=${post.id}`;
+    navigator.clipboard.writeText(url).then(() => {
+      // Change to copied state
+      const originalText = shareButton.textContent;
+      shareButton.textContent = '[link copied]';
+      shareButton.style.fontStyle = 'italic';
+      shareButton.disabled = true;
+      
+      // Reset after 2 seconds
+      setTimeout(() => {
+        shareButton.textContent = originalText;
+        shareButton.style.fontStyle = 'normal';
+        shareButton.disabled = false;
+      }, 2000);
+    }).catch(err => {
+      console.error('Failed to copy to clipboard:', err);
+    });
+  });
+  footerContent.appendChild(shareButton);
+  
+  footer.appendChild(footerContent);
 
   const content = document.createElement('div');
   content.className = 'post-content';
@@ -63,6 +98,11 @@ function createPostCard(post) {
   return article;
 }
 
+function getPostIdFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('post_id');
+}
+
 function renderPosts() {
   const container = document.querySelector('.foreground');
   if (!container) return;
@@ -73,7 +113,20 @@ function renderPosts() {
     return;
   }
 
-  window.blogPosts.forEach(post => {
+  const postId = getPostIdFromUrl();
+  let postsToDisplay = window.blogPosts;
+
+  // Filter by post_id if provided
+  if (postId !== null) {
+    const filtered = window.blogPosts.filter(post => post.id == postId);
+    if (filtered.length === 0) {
+      container.textContent = 'Post not found.';
+      return;
+    }
+    postsToDisplay = filtered;
+  }
+
+  postsToDisplay.forEach(post => {
     container.appendChild(createPostCard(post));
   });
 }
