@@ -267,28 +267,51 @@ h1, p, a, li, span {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+  align-items: center;
+}
+
+.audio-volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 60px;
+  height: 4px;
+  background: #888;
+  accent-color: #ffffff;
+  cursor: pointer;
+}
+.audio-volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(223, 223, 223);
 }
 
 .audio-play-btn,
-.audio-pause-btn {
+.audio-pause-btn,
+.audio-mute-btn {
+  width:28px;
+
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 8px;
+  padding: 0.1rem 0.1rem;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.2s ease;
 }
 
 .audio-play-btn:hover,
-.audio-pause-btn:hover {
+.audio-pause-btn:hover,
+.audio-mute-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.4);
 }
 
 .audio-play-btn:active,
-.audio-pause-btn:active {
+.audio-pause-btn:active,
+.audio-mute-btn:active {
   transform: scale(0.95);
 }
 

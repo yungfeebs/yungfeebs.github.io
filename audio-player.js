@@ -3,6 +3,7 @@ class AudioPlayerWidget {
     this.audio = new Audio();
     this.isPlaying = false;
     this.currentTrack = null;
+    this.savedVolume = 0.7;
     this.initWidget();
   }
 
@@ -13,9 +14,39 @@ class AudioPlayerWidget {
     const playBtn = widget.querySelector('.audio-play-btn');
     const pauseBtn = widget.querySelector('.audio-pause-btn');
     const closeBtn = widget.querySelector('.audio-close-btn');
+    const muteBtn = widget.querySelector('.audio-mute-btn');
+    const volumeSlider = widget.querySelector('.audio-volume-slider');
     const trackNameEl = widget.querySelector('.audio-track-name');
     const progressBar = widget.querySelector('.audio-progress-bar');
     const timeDisplay = widget.querySelector('.audio-time-display');
+
+    this.audio.volume = volumeSlider ? parseFloat(volumeSlider.value) : 0.7;
+    this.savedVolume = this.audio.volume;
+    if (volumeSlider) {
+      volumeSlider.addEventListener('input', () => {
+        this.audio.volume = parseFloat(volumeSlider.value);
+        if (this.audio.volume > 0) {
+          this.savedVolume = this.audio.volume;
+          muteBtn.textContent = '🔈';
+        }
+      });
+    }
+
+    // Mute button
+    if (muteBtn) {
+      muteBtn.addEventListener('click', () => {
+        if (this.audio.volume > 0) {
+          this.savedVolume = this.audio.volume;
+          this.audio.volume = 0;
+          volumeSlider.value = 0;
+          muteBtn.textContent = '🔇';
+        } else {
+          this.audio.volume = this.savedVolume;
+          volumeSlider.value = this.savedVolume;
+          muteBtn.textContent = '🔈';
+        }
+      });
+    }
 
     widget.classList.remove('visible');
 
