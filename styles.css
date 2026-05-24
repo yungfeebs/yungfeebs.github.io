@@ -228,7 +228,6 @@ h1, p, a, li, span {
 
 .audio-close-btn {
   position: absolute;
-  top: 0.5rem;
   right: 0.5rem;
   background: transparent;
   border: none;
