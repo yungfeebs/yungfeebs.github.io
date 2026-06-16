@@ -1,10 +1,29 @@
 [
   {
+    "id": 14,
+    "title": "ty mr greep",
+    "date": "June 16, 2026",
+    "body": "<i>The New Sound</i> is one of those records that produced a vivid memory the first time I heard it, one that I can't shake whenever I return to it. In my car, stuck in 5 o'clock traffic right next to the Walker's sculpture garden, I heard Geordie Greep's impassioned howling on the album's second track <i>Terra</i>. The thought struck me, 'Oh, I'm going to <i>love</i> this'. I hadn't been a black midi regular, so it was certainly new territory for me. Heightened by the Latin drums and labyrinthian lyrics I descended into the madness and resulting clarity of Greep's (astoundingly) first solo project. Later that year it was set in stone by a live show I saw at First Avenue which was easily one of my favorites of all time. In one word, intrusive. The New Sound presents a stylization of an internal monologue, thoughts that verge on rational but step over the line, only to salsa back into normality. The album is profoundly relatable at time and at others fiercely alien, but only for a fleeting verse. The music itself is from another dimension as well, one slightly askew with broad influences and narrow performances. The spotlight is shone on Greep throughout, sometimes softly lighting its subject, sometimes so bright his flesh begins to boil, sometimes both in the same track. The chief accomplishment of this dichotomy.. you can't look away.",
+    "image": "thenewsound.jpg",
+    "audioUrl": "assets/mp3s/Terra.mp3",
+    "audioTitle": "Geordie Greep - Terra",
+    "tags": "music",
+    "rating": "★★★★★"
+  },
+  {
+    "id": 13,
+    "title": "doing too much",
+    "date": "June 12, 2026",
+    "body": "truthfully, many things are far more unique than we give them credit for. obscured by the human instinct of comparison and metaphor, the persistent digging for a connection to aid in understanding is reductive. we cannot be blamed for the habit, it is effective to our pursuit of gathering knowledge. that said, comparison is an obstacle to discovering the true essence of a thing. it is not a foot in the door but a kick through the door, forever burdening something pure and all alone itself with the yoke of category.\n\nthis shortcoming is surely a symptom of the neural pathways being just that, pathways. to me it lends credence to the theory that the human mind is not capable of understanding itself. and it may be for good reason that it cannot.",
+    "tags": "personal, philosophy",
+    "rating": "★☆☆☆☆"
+  },
+  {
     "id": 12,
     "title": "i love this website",
     "date": "June 10, 2026",
     "body": "A side effect of this project is reading my own writing regularly for the first time in a while. I've started to learn my own quirks, which are fluid of course. A lot of \n\n 'I love x...' \nand 'I would love if x..'.\n\nIt became apparent pretty quickly when the song I was talking about had love in the title. I guess if they ever do one of those word count analyses like people reference with <i>The Bible</i> (sorry, couldn't help myself from italicizing it) having <b>love</b> as a high ranking word wouldn't be the worst thing. My personal site/talk about music thingy is kind of like the bible so, in importance..., like if historians count the words in my posts someday... I'm sort of like the Jesus of indecision.",
-    "tags": "music",
+    "tags": "personal",
     "rating": "⋆⋆⋆⋆⋆ -jesus of indecision"
   },
   {
@@ -14,7 +33,7 @@
     "body": "In 2023 I was listening to Wednesday's <i>Rat Saw God</i>, a standout folky-punk record that typified my rotation at that time. I remember sharing it with my roommate who was later referenced it as 'That one with the song where she rambles about someone ODing over some guitars'. Yeah that's the one. Anyway, I can't remember when exactly, I would assume pretty quickly after the release of Lenderman's breakout <i>Manning Fireworks</i> I learned that this song, <b><i>How Do You Let the Love Into the Heart That Isn't Split Wide Open</i></b> was written and preformed by members of Wednesday. It had been nestled up in my spotify for years after it was recommended to me, and I returned regularly to this distortion drenched poem that always felt like it had more to say than it said. That was the genesis of my MJ Lenderman fandom, which has marched forward and even expanded my tastes into more southern rock inspired indie in the 2020's. Love this song. Love the concept of the title being the lyrics. It's the best way you can spend 63 seconds. Now you can love it too.",
     "image": "hdyllithtiswo.jpg",
     "audioUrl": "assets/mp3s/How Do You Let the Love Into the Heart That Isn't Split Wide Open.mp3",
-    "audioTitle": "MJ Lenderman - How Do You Let the Love Into the Heart That Isn't Split Wide Open.mp3",
+    "audioTitle": "MJ Lenderman - How Do You Let the Love Into the Heart That Isn't Split Wide Open",
     "tags": "music",
     "rating": "★★★★★"
   },
