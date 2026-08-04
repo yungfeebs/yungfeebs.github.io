@@ -54,11 +54,12 @@ body {
   padding: 2rem;
   pointer-events: none;
   user-select: none;
-  font-family: 'arial black', sans-serif;
+  font-family: "arial black", sans-serif;
 }
 
 img {
-  -webkit-user-drag: none;}
+  -webkit-user-drag: none;
+}
 
 .constellation-layer {
   position: fixed;
@@ -153,7 +154,7 @@ img {
 .post-body {
   color: #eee;
   line-height: 1.7;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .post-content {
@@ -170,7 +171,9 @@ img {
   border-radius: 14px;
   object-fit: cover;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
 .post-image[style*="cursor: pointer"]:hover {
@@ -193,7 +196,11 @@ img {
   font-style: italic;
 }
 
-h1, p, a, li, span {
+h1,
+p,
+a,
+li,
+span {
   color: #fff;
   background: transparent;
   user-select: none;
@@ -289,7 +296,7 @@ h1, p, a, li, span {
 .audio-play-btn,
 .audio-pause-btn,
 .audio-mute-btn {
-  width:28px;
+  width: 28px;
 
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
