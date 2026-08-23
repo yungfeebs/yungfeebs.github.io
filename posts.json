@@ -1,5 +1,16 @@
 [
-    {
+  {
+    "id": 20,
+    "title": "gizz",
+    "date": "August 23, 2026",
+    "body": "I want to hear any music any time. But I especially want to hear the right music at the right time.",
+    "image": "infesttheratsnest.jpg",
+    "audioUrl": "assets/mp3s/Mars For The Rich.mp3",
+    "audioTitle": "King Gizzard & The Lizard Wizard - Mars For The Rich",
+    "tags": "music",
+    "rating": "★★★★★"
+  },
+  {
     "id": 19,
     "title": "FoV II",
     "date": "August 21, 2026",
