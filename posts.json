@@ -1,5 +1,27 @@
 [
-    {
+  {
+    "id": 25,
+    "title": "( •̀ ω •́ )✧",
+    "date": "November 8, 2026",
+    "body": "another song because ily",
+    "image": "johnprine.jpg",
+    "audioUrl": "assets/mp3s/Angel From Montgomery.mp3",
+    "audioTitle": "John Prine - Angel From Montgomery",
+    "tags": "music",
+    "rating": "★★★★★"
+  },
+  {
+    "id": 24,
+    "title": "ryan, ending",
+    "date": "November 8, 2026",
+    "body": "I feel like everything is alright. But it's clearly not. Panic, headaches, nausea. My body is telling me that I'm immensely stressed and I need to reset. It's right, and I'll be fine. Writing here helps.\n\nThis place was partly inspired by <i>The Anthropocene Reviewed</i> a novel which takes the world on its face and subjects it to the almighty five-star scale. I attended a talk by its author, John Green, last week. It addressed the dichotomy of sharing your personal strife with the world. Something gained: community, clarity, and the ability to move forward with others at your side. Lost: normalcy, privacy, and perhaps pride. And that's why this site is one foot across the line. Public, but obscure. I guess it's an attempt to get the best of both worlds.\n\nLately I've been on a progressive country and folk revival binge. Here's a song from a playlist I made, I'll add another soon.",
+    "image": "sittinbytheroad.jpg",
+    "audioUrl": "assets/mp3s/Clay Pigeons.mp3",
+    "audioTitle": "Blaze Foley - Clay Pigeons",
+    "tags": "music",
+    "rating": "★★★★★"
+  },
+  {
     "id": 23,
     "title": "moving",
     "date": "September 29, 2026",
@@ -22,7 +44,7 @@
     "id": 21,
     "title": "guilt",
     "date": "August 26, 2026",
-    "body": "I wasted a lot of time growing up. I continue to waste it now. I feel guilt when I think about tall the opportunity that passes me by every day. Will I look back and be disappointed in myself? Probably not. I've experienced so much but it's hard to say that I've accomplished so much. I do think I ave accomplished so much, but it is still hard to say. Here's some bluegrass I've been jamming to in the wake of FoV. I am excited for the rumored Billy Strings and KGLW collab album.",
+    "body": "I wasted a lot of time growing up. I continue to waste it now. I feel guilt when I think about all the opportunity that passes me by every day. Will I look back and be disappointed in myself? Probably not. I've experienced so much but it's hard to say that I've accomplished so much. I do think I ave accomplished so much, but it is still hard to say. Here's some bluegrass I've been jamming to in the wake of FoV. I am excited for the rumored Billy Strings and KGLW collab album.",
     "image": "home.jpg",
     "audioUrl": "assets/mp3s/Running.mp3",
     "audioTitle": "Billy Strings - Running",
