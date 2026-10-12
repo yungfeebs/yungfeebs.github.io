@@ -1,38 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>✩°｡⋆ ryanfeb.us ⋆｡°✩</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <canvas id="fireworks"></canvas>
-  <div class="back">
-  </div>
-  <nav class="top-nav">
-    <a class="nav-link" id="home-link" style="display: none;" href="/">[home]</a>
-  </nav>
-  <div id="audio-player-widget" class="audio-player-widget">
-    <div class="audio-player-container">
-      <button class="audio-close-btn" type="button">×</button>
-      <div class="audio-track-name"><i>click some music to play</i></div>
-      <div class="audio-controls">
-        <button class="audio-play-btn">▶</button>
-        <button class="audio-pause-btn" style="display: none;">⏸</button>
-        <button class="audio-mute-btn">🔈</button>
-        <input class="audio-volume-slider" type="range" min="0" max="1" step="0.01" value="0.7">
-      </div>
-      <div class="audio-progress-container">
-        <div class="audio-progress-bar"></div>
-      </div>
-      <div class="audio-time-info">
-        <span class="audio-time-display">0:00</span> / <span class="audio-duration">0:00</span>
+  <head>
+    <title>✩°｡⋆ ryanfeb.us ⋆｡°✩</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="fireworks"></canvas>
+    <div class="back"></div>
+    <nav class="top-nav">
+      <a class="nav-link" id="home-link" href="/">[ryanfeb.us]</a>
+    </nav>
+    <div id="audio-player-widget" class="audio-player-widget">
+      <div class="audio-player-container">
+        <button class="audio-close-btn" type="button">×</button>
+        <div class="audio-track-name"><i>click some music to play</i></div>
+        <div class="audio-controls">
+          <button class="audio-play-btn">▶</button>
+          <button class="audio-pause-btn" style="display: none">⏸</button>
+          <button class="audio-mute-btn">🔈</button>
+          <input
+            class="audio-volume-slider"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.7"
+          />
+        </div>
+        <div class="audio-progress-container">
+          <div class="audio-progress-bar"></div>
+        </div>
+        <div class="audio-time-info">
+          <span class="audio-time-display">0:00</span> /
+          <span class="audio-duration">0:00</span>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="foreground"></div>
-  <script src="constellations.js"></script>
-  <script src="audio-player.js"></script>
-  <script src="post-loader.js"></script>
-  <script src="fireworks.js"></script>
-</body>
+    <div class="foreground"></div>
+    <script src="constellations.js"></script>
+    <script src="audio-player.js"></script>
+    <script src="post-loader.js"></script>
+    <script src="fireworks.js"></script>
+  </body>
 </html>
